@@ -1,26 +1,30 @@
-# AI_USAGE.md
+# AI_USAGE_hito2.md
 
 ## Herramientas utilizadas
 - ChatGPT (GPT-5, OpenAI)
 
-## Para qué se utilizó
-- Generar la primera versión del código en C para la consola.
-- Sugerir la estructura de funciones (mostrar preguntas, leer respuesta, validar, feedback, pruebas básicas).
-- Crear un archivo readme vacío para añadir el Estado del proyecto.
-- Apoyo en la organización del repositorio (issues, milestone, project board).
+## Propósito del uso de la IA
+Durante el desarrollo del Hito 2 se empleó inteligencia artificial como apoyo para:
+- Migrar el código del Hito 1 (C) a una versión modular en C++ con clases.
+- Diseñar la estructura de archivos `src/` y la organización de las clases `Pregunta` y `Cuestionario`.
+- Generar documentación técnica inicial (README y plan de trabajo) ajustada a la rúbrica del curso.
+- Resolver dudas sintácticas del lenguaje y buenas prácticas de programación orientada a objetos.
 
 ## Prompts representativos
-- “Hazme un código esqueleto que pide en el hito uno a base de la primera idea que te mandé, para yo agregarle las distintas preguntas/ejercicios.”
-- “Hazme un README vacío para el proyecto para descargar.”
+- “Convierte mi código del Hito 1 a C++ aplicando Programación Orientada a Objetos con clases Pregunta y Cuestionario.”  
+- “Crea los archivos Pregunta.h, Pregunta.cpp, Cuestionario.h y Cuestionario.cpp con comentarios explicativos.”  
+- “Redacta un README formal y técnico para el Hito 2 de TEL-102.”  
+- “Genera un plan de trabajo y checklist basado en la rúbrica del Hito 2.”
 
-## Observaciones / Limitaciones
-- El banco de preguntas inicial fue generado como ejemplo. El grupo debe revisar y validar pedagógicamente cada ejercicio.
-- No se usaron librerías externas; el código funciona en consola, pero aún no contempla entrada masiva de datos ni archivos.
-- La IA puede proponer formatos o estilos de redacción, pero el equipo debe ajustar el tono y el contenido final para que represente su trabajo.
-- Se recomienda no depender al 100% de la IA: el código fue probado en modo `--test`, pero se deben realizar pruebas adicionales.
+## Observaciones y limitaciones
+- El código final fue revisado y ajustado manualmente para asegurar su correcta compilación y legibilidad.  
+- No se utilizaron librerías externas ni frameworks adicionales.  
+- La IA se empleó como herramienta de apoyo técnico y documental, no como sustituto del razonamiento ni de las decisiones de diseño del equipo.  
+- Todas las sugerencias fueron validadas por los integrantes antes de incorporarse al repositorio.
 
 ## Buenas prácticas aplicadas
-- Código organizado en `src/` con compilación clara en consola.
-- Funciones separadas para cada funcionalidad clave.
-- Retroalimentación documentada (correcto/incorrecto con explicación).
-- Documentación del uso de IA en este archivo, cumpliendo con la rúbrica.
+- Uso de `std::vector` y `std::string` en lugar de arreglos de C.  
+- Implementación de constructores, métodos y encapsulamiento.  
+- Separación del código en archivos `.h` y `.cpp`.  
+- Comentarios descriptivos y consistentes.  
+- Registro explícito del uso de IA en este documento, conforme a la rúbrica TEL-102.
