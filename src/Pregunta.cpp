@@ -28,8 +28,10 @@ void Pregunta::feedback(bool correcto) const {
         std::cout << " Incorrecto. Explicacion: " << explicacion << "\n";
 }
 
-Copiar código
+
+
 // src/Cuestionario.h
+
 #include "Pregunta.h"
 #include <vector>
 
