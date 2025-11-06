@@ -27,8 +27,6 @@ void Pregunta::feedback(bool correcto) const {
     else
         std::cout << " Incorrecto. Explicacion: " << explicacion << "\n";
 }
-🧮 Paso 3 — Clase Cuestionario
-Esta clase administrará el flujo de preguntas.
 
 cpp
 Copiar código
