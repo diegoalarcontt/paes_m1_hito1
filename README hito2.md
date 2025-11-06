@@ -1,24 +1,68 @@
-# 🧠 PAES M1 Trainer — Hito 2
+# PAES M1 Trainer — Hito 2
 
-## 📌 Descripción general
+## Descripción del proyecto
 Este proyecto corresponde al **Hito 2** del curso **TEL-102: Seminario de Programación**.  
-Corresponde a la **migración completa del programa del Hito 1 (C)** a una **versión en C++ orientada a objetos**, aplicando encapsulamiento, modularidad y composición de clases.
+Consiste en la **migración completa del código del Hito 1**, desarrollado en lenguaje C, hacia una versión implementada en **C++** aplicando los principios de **Programación Orientada a Objetos (POO)**.
 
-El programa mantiene la misma funcionalidad: simular un **entrenador de preguntas tipo PAES M1**, entregando retroalimentación inmediata al usuario.
-
----
-
-## 🎯 Objetivo general
-Migrar el código del Hito 1 (lenguaje C) a una implementación modular en **C++**, empleando los principios de **Programación Orientada a Objetos (POO)** y manteniendo la misma lógica de cuestionario.
-
-### 🎯 Objetivos específicos
-- Definir clases para representar preguntas y administrar el cuestionario.  
-- Aplicar **constructores, métodos y encapsulamiento**.  
-- Sustituir arreglos de C por contenedores de STL (`std::vector`, `std::string`).  
-- Dividir el código en archivos `.h` y `.cpp`.  
-- Documentar el uso de IA y la organización del repositorio en GitHub.
+El propósito del sistema sigue siendo el mismo: ofrecer un **entrenador en consola** para que estudiantes practiquen preguntas tipo **PAES M1 de Matemáticas**, con retroalimentación inmediata para cada respuesta.
 
 ---
 
-## 🧩 Estructura del proyecto
+## Objetivo general
+Migrar el programa del Hito 1 desde C a C++, manteniendo la funcionalidad base pero adoptando una estructura modular, jerárquica y orientada a objetos.
 
+## Objetivos específicos
+- Reestructurar el código utilizando **clases y métodos**.
+- Implementar **encapsulamiento** y **composición** entre las clases del sistema.
+- Sustituir arreglos de C por estructuras de la biblioteca estándar de C++ (`std::vector`, `std::string`).
+- Separar el código en archivos de encabezado (`.h`) e implementación (`.cpp`).
+- Mantener la claridad del flujo de ejecución y la retroalimentación al usuario.
+- Documentar adecuadamente el proceso de migración y el uso de herramientas de IA.
+
+---
+
+## Funcionalidades implementadas
+- Carga automática de un conjunto de ocho preguntas tipo PAES.
+- Presentación del enunciado y tres alternativas de respuesta.
+- Lectura de la alternativa ingresada por el usuario (A, B o C).
+- Validación de la respuesta y entrega de retroalimentación inmediata.
+- Cálculo y visualización del porcentaje de aciertos al final de la sesión.
+- Modo de prueba (`--test`) para verificar la consistencia del sistema.
+
+---
+
+## Estructura del repositorio
+
+paes_m1_hito1/
+├─ src/
+│ ├─ main.cpp
+│ ├─ Pregunta.h
+│ ├─ Pregunta.cpp
+│ ├─ Cuestionario.h
+│ └─ Cuestionario.cpp
+├─ README hito2.md
+└─ AI_USAGE.md
+
+---
+
+## Clases principales
+
+### Clase `Pregunta`
+Representa una pregunta individual del cuestionario.  
+Atributos principales: eje, enunciado, opciones, índice de respuesta correcta y explicación.  
+Métodos: `mostrar()`, `validar()`, `feedback()`.
+
+### Clase `Cuestionario`
+Administra el conjunto de preguntas y controla el flujo general del programa.  
+Atributos principales: `std::vector<Pregunta> preguntas`.  
+Métodos: `ejecutar()`, `modoTest()`.
+
+---
+
+## Compilación y ejecución
+
+### En Linux o macOS
+```bash
+g++ -std=c++17 -Wall -Wextra src/*.cpp -o paes
+./paes          # ejecución normal
+./paes --test   # modo de prueba
