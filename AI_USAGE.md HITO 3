@@ -1,0 +1,28 @@
+
+## Herramientas de IA utilizadas
+- ChatGPT (modelos GPT-5.1 y GPT-5.1-auto)
+
+## Uso de IA en el proyecto
+La IA fue utilizada para:
+- Diseñar la estructura inicial de la interfaz Qt.
+- Generar y revisar fragmentos de código C++ y Qt.
+- Crear documentación del proyecto (README, guiones, explicaciones).
+- Sugerir mejoras de diseño de clases y modularidad.
+- Crear mockups visuales de la interfaz.
+- Producir este archivo AI_USAGE.md y texto para issues/milestones.
+
+## Prompts utilizados (resumen)
+- “Genera README completo según la pauta del Hito 3.”
+- “Crea el archivo AI_USAGE.md.”
+- “Explica el flujo del programa y la arquitectura Qt.”
+- “Crear guion para explicar el proyecto CMATH.”
+- “Migrar lógica del Hito 2 a interfaz Qt.”
+
+## Observaciones
+- Se requirió ajustar manualmente detalles de señal-slot para que el proyecto compile.
+- Los mockups visuales generados por IA no replican exactamente el estilo real de Qt.
+- La IA no puede ejecutar el programa ni probar interacciones reales.
+
+## Limitaciones
+- Las sugerencias de código pueden requerir ajustes sintácticos.
+- Los ejemplos visuales no son capturas reales de Qt.
